@@ -2,35 +2,78 @@
 <html>
 
 <head>
-    <title>我的网站</title>
+    <meta charset="UTF-8">
+    <title>我的个人博客</title>
 
     <style>
         body {
-            background-image: url('background.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
             margin: 0;
-
+            font-family: Arial, sans-serif;
+            background: #0f172a;
             color: white;
-            text-align: center;
-            font-family: sans-serif;
         }
 
-        .box {
-            padding-top: 200px;
-            background-color: rgba(0,0,0,0.4);
-            height: 100vh;
+        header {
+            background: #111827;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .post {
+            background: #1f2937;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .post:hover {
+            transform: scale(1.02);
+            background: #374151;
+        }
+
+        a {
+            color: #60a5fa;
+            text-decoration: none;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="box">
-        <h1>欢迎来到李皓澜的网站 ✨</h1>
-        <p>感谢点击🤩</p>
+<header>
+    <h1>🚀 我的个人博客</h1>
+    <p>记录生活 · 学习 · 创作</p>
+</header>
+
+<div class="container">
+
+    <div class="post">
+        <h2><a href="#">我的第一篇文章</a></h2>
+        <p>这是我博客的第一篇文章内容，可以在这里写日记或者学习心得。</p>
     </div>
+
+    <div class="post">
+        <h2><a href="#">学习建站的过程</a></h2>
+        <p>我正在学习如何用 GitHub Pages 搭建个人网站！</p>
+    </div>
+
+    <div class="post">
+        <h2><a href="#">关于我</a></h2>
+        <p>这里可以写你的简介，比如兴趣、爱好等等。</p>
+    </div>
+
+</div>
 
 </body>
 
